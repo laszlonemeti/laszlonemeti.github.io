@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+</head>
+<body>
+    táblázat készítés 
+    <br>
+    <br>
+    <table> <!-- táblázat-->
+        <caption>Nyitvatartás</caption> <!-- táblázat neve/címe-->
+        <thead> <!-- fejlécek-->
+            <tr>
+                <th>nap</th> <!-- táblázat fejlécek (oszlopok nevei)-->
+                <th>nyitás</th>
+                <th>zárás</th>
+            </tr>
+        </thead> <!-- táblázat fejléce table header-->
+        <tbody> <!-- a táblázat "teste"-->
+        <tr> <!-- táblázat sora-->
+            <td>Hétfő - Péntekig</td> <!-- táblázat adata (cellák)-->
+            <td>08:00</td>
+            <td>21:00</td>
+        </tr>
+        <tr> <!-- táblázat sora-->
+            <td>Szombat</td> <!-- táblázat adata (cellák)-->
+            <td>08:00</td>
+            <td>24:00</td>
+        </tr>
+        <tr> <!-- táblázat sora-->
+            <td>Vasárnap</td> <!-- táblázat adata (cellák)-->
+            <td>08:00</td>
+            <td>12:00</td>
+        </tr>
+        </tbody> <!-- táblázat test vége-->
+        <tfoot> <!-- táblázat lábléce-->
+            <tr>
+                <td>
+                    ide bármi írható &copy; 2020
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+<br>
+<br>
+<table> <!-- táblázat cellák összevonása-->
+    <caption>Nyitvatartás</caption> <!-- táblázat neve/címe-->
+    <thead> <!-- fejlécek-->
+        <tr>
+            <th>nap</th> <!-- táblázat fejlécek (oszlopok nevei)-->
+            <th>nyitás</th>
+            <th>zárás</th>
+        </tr>
+    </thead> <!-- táblázat fejléce table header-->
+    <tbody> <!-- a táblázat "teste"-->
+    <tr> <!-- táblázat sora-->
+        <td>Hétfő - Péntekig</td> <!-- táblázat adata (cellák)-->
+        <td>08:00</td>
+        <td rowspan="2">21:00</td> <!-- a harmadik cellát kibővítjük 2 sor (row) magasra -->
+    </tr>
+    <tr> <!-- táblázat sora-->
+        <td>Szombat</td> <!-- táblázat adata (cellák)-->
+        <td>08:00</td>
+    </tr>
+    <tr> <!-- táblázat sora-->
+        <td>Vasárnap</td> <!-- táblázat adata (cellák)-->
+        <td colspan="2">zárva</td> <!-- a második cella kibővül 2 oszlop (colum) szélesre-->
+    </tr>
+    </tbody> <!-- táblázat test vége-->
+    <tfoot> <!-- táblázat lábléce-->
+        <tr>
+            <td>
+                ide bármi írható &copy; 2020
+            </td>
+        </tr>
+    </tfoot>
+</table>
+</body>
